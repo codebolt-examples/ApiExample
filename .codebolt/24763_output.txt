@@ -1,0 +1,5 @@
+curl -X POST http://localhost:8787/square-root -H 'Content-Type: appli cation/json' -d '{"a": 16}' && echo COMMAND_SUCCESS || echoCOMMAND_FAILURE COMMAND HAS FAILED
+^CCOMMAND_FAILURE
+bash-3.2$ COMMAND HAS FAILED
+cd /Users/ravirawat/Desktop/cb/ApiAgents
+bash-3.2$

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 4,
+    "avatarFallback": "CE",
+    "avatarSrc": "https://placehold.co/200x200",
+    "createdByUser": "ravi",
+    "description": "Codebolt Dev, is  a highly skilled software developer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
+    "agent_id": "6dd799b5-43c2-4c55-ba49-cae6cbac2498",
+    "longDescription": "A basic agent designed for the Codebolt platform, offering a range of\nfunctionalities to enhance interaction with the platform.\n",
+    "tags": [
+      "web",
+      "code-generation"
+    ],
+    "title": "CodeBolt Dev",
+    "zipFilePath": "https://storage.googleapis.com/codeboltai.appspot.com/agents/KrpqeGKIvK.zip",
+    "unique_id": "codebolt_dev",
+    "metadata": {
+      "agent_routing": {
+        "worksonblankcode": true,
+        "worksonexistingcode": false,
+        "supportedlanguages": [
+          "web"
+        ],
+        "supportedframeworks": [
+          "html"
+        ]
+      },
+      "defaultagentllm": {
+        "strict": true,
+        "modelorder": [
+          "ollama2"
+        ]
+      },
+      "sdlc_steps_managed": [
+        {
+          "name": "deployment",
+          "example_instructions": [
+            "create website"
+          ]
+        }
+      ],
+      "llm_role": [
+        {
+          "name": "documentationllm",
+          "description": "LLM to be used for advanced Documentation. Please select a model that excels in documentation tasks.",
+          "strict": true,
+          "modelorder": [
+            "gpt-4-turbo",
+            "gpt-3.5-turbo",
+            "mistral7b.perplexity",
+            "mistral7b.any",
+            "llama2-70b",
+            "llama2-15b",
+            "group.documentationmodels"
+          ]
+        },
+        {
+          "name": "testingllm",
+          "description": "LLM to be used for advanced Testing. Please select a model that excels in testing tasks.",
+          "strict": true,
+          "modelorder": [
+            "gpt-4-turbo",
+            "gpt-3.5-turbo",
+            "mistral7b.perplexity",
+            "mistral7b.any",
+            "llama2-70b",
+            "llama2-15b",
+            "group.testingmodels"
+          ]
+        },
+        {
+          "name": "actionllm",
+          "description": "LLM to be used for executing advanced actions.",
+          "strict": true,
+          "modelorder": [
+            "gpt-4-turbo",
+            "gpt-3.5-turbo",
+            "mistral7b.perplexity",
+            "mistral7b.any",
+            "llama2-70b",
+            "llama2-15b",
+            "group.actionmodels"
+          ]
+        }
+      ]
+    },
+    "initial_message": "Codebolt Dev, is a highly skilled software developer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices",
+    "actions": [
+      {
+        "name": "Execute",
+        "description": "Executes the given task.",
+        "detailDescription": "more detailed description",
+        "actionPrompt": "Please create website"
+      }
+    ],
+    "slug": "6dd799b543c24c55ba49cae6cbac2498",
+    "version": "1.1.15",
+    "author": "ravi",
+    "status": 1
+  }
+]

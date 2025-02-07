@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8787/subtract -H'Content-Type: applicat ion/json' -d '{"a": 15, "b": 10}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUR EInternal Server ErrorCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

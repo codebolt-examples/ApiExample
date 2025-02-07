@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8787/average -H 'Content-Type:applicati on/json' -d '{"a": 10, "b": 20}' && echo COMMAND_SUCCESS || echo COMMAND_FAILURE [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KEInternal Server ErrorCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

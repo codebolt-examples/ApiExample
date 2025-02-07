@@ -1,0 +1,21 @@
+npm init -y && echo COMMAND_SUCCESS || echo COMMAND_FAILURE[1G[0KWrote to /Users/ravirawat/Desktop/cb/ApiAgents/package.json:
+
+{
+  "name": "apiagents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}[1G[0K⠙[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

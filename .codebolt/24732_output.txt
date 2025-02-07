@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8787/multiply -H 'Content-Type: applicat ion/json' -d '{"a": 5, "b": 6}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREInternal Server ErrorCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

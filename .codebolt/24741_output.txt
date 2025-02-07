@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8787/divide -H 'Content-Type: applicatio n/json' -d '{"a": 30, "b": 5}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREInternal Server ErrorCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

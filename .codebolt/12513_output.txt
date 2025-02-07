@@ -1,0 +1,9 @@
+curl http://localhost:8787 && echo COMMAND_SUCCESS ||echo COMMAND_FAI LUREUnauthorizedCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

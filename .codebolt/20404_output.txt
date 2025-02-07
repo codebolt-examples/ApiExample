@@ -1,0 +1,22 @@
+npm install && echo COMMAND_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K
+up to date, audited 24 packages in 3s[1G[0K⠋[1G[0K
+[1G[0K⠋[1G[0K3 packages are looking for funding
+[1G[0K⠋[1G[0K  run `npm fund` for details
+[1G[0K⠋[1G[0K
+4 [33m[1mmoderate[22m[39m severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[1G[0K⠋[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

@@ -1,0 +1,12 @@
+npm install hono && echo COMMAND_SUCCESS ||echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K
+added 1 package, and audited 2 packages in 605ms
+[1G[0K⠴[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠴[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

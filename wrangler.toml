@@ -1,0 +1,4 @@
+name = "math-api"
+compatibility_date = "2023-11-25"
+main = "src/index.ts"
+compatibility_flags = [ "nodejs_compat" ]

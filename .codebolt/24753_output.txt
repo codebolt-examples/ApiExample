@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8787/power -H 'Content-Type: application /json' -d '{"a": 2, "b": 3}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREInternal Server ErrorCOMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

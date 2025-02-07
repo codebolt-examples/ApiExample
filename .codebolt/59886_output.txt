@@ -1,0 +1,14 @@
+npm install express mongoose hono && echo COMMAND_SUCCESS || echo COMM AND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K
+added 78 packages, and audited 92 packages in 2s[1G[0K⠋[1G[0K
+[1G[0K⠋[1G[0K15 packages are looking for funding
+[1G[0K⠋[1G[0K  run `npm fund` for details
+[1G[0K⠋[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠋[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

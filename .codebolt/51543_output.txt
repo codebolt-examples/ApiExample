@@ -1,0 +1,12 @@
+npm install hono mongodb && echo COMMAND_SUCCESS || echo COMMAND_FAILU RE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K
+added 13 packages, and audited 14 packages in 1s
+[1G[0K⠸[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠸[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

@@ -1,0 +1,11 @@
+cd /Users/ravirawat/Desktop/cb/ApiAgents && npm install hono && echo C OMMAND_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0Kadded 1 package, and audited 2 packages in 568ms
+[1G[0K⠴[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠴[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

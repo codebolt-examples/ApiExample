@@ -1,0 +1,7 @@
+npm install && echo COMMAND_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m ETARGET
+[1G[0K⠸[1G[0K[1mnpm[22m [31merror[39m [94mnotarget[39m No matching version found for cloudflare-worker-mock@^0.1.8.
+[1G[0K⠸[1G[0K[1mnpm[22m [31merror[39m [94mnotarget[39m In most cases you or one of your dependencies are requesting
+[1mnpm[22m [31merror[39m [94mnotarget[39m a package version that doesn't exist.
+[1G[0K⠸[1G[0K[1mnpm[22m [31merror[39m A complete log of this run can be found in: /Users/ravirawat/.npm/_logs/2025-02-03T11_36_09_660Z-debug-0.log
+[1G[0K⠸[1G[0KCOMMAND_FAILURE COMMAND HAS FAILED
+bash-3.2$

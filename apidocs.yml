@@ -1,0 +1,48 @@
+type: api
+language: nodejs
+database:
+  - d1: Cloudflare D1
+apis:
+  - add:
+    route: /add
+    description: This is the api to add two numbers
+    input: Input two numbers a and b
+    output: Output the sum of the two numbers
+  - subtract:
+    route: /subtract
+    description: This is the api to subtract two numbers
+    input: Input two numbers a and b
+    output: Output the subtraction of the two numbers  
+  - multiply:
+    route: /multiply
+    description: This is the api to multiply two numbers
+    input: Input two numbers a and b
+    output: Output the product of the two numbers
+  - divide:
+    route: /divide
+    description: This is the api to divide two numbers
+    input: Input two numbers a and b
+    output: Output the division of the two numbers
+  - modulus:
+    route: /modulus
+    description: This is the api to find modulus of two numbers
+    input: Input two numbers a and b
+    output: Output the modulus of the two numbers
+  - power:
+    route: /power
+    description: This is the api to calculate the power of a number
+    input: Input two numbers a and b
+    output: Output the result of a raised to the power of b
+  - average:
+    route: /average
+    description: This is the api to calculate the average of two numbers
+    input: Input two numbers a and b
+    output: Output the average of the two numbers
+  - square-root:
+    route: /square-root
+    description: This is the api to calculate the square root of a number
+    input: Input one number a
+    output: Output the square root of the number
+middleware:
+  - auth: Add Authentication of simple login
+additional_instruction: use Cloudflare Worker and Hono setup. Establish a proper project structure with directories for routes, controllers, and services. Do not write a single-file server; utilize a proper architecture.

@@ -1,0 +1,24 @@
+npm init -y && npm install hono mongodb && echoCOMMAND_SUCCESS || ech o COMMAND_FAILURE[1G[0KWrote to /Users/ravirawat/Desktop/cb/ApiAgents/package.json:
+
+{
+  "name": "apiagents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}[1G[0K⠙[1G[0K[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0Kadded 13 packages, and audited 14 packages in 1s
+[1G[0K⠦[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠦[1G[0KCOMMAND_SUCCESS
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$
