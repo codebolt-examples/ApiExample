@@ -55,9 +55,9 @@
                   "views": [
                     "Preview",
                     "1653adc1-d725-4a99-ad08-10cf2d3c5680",
-                    "0c60c991-4704-43f1-88e6-f89860e951d3"
+                    "44e5db0a-16e9-4306-95ad-66b110e381d8"
                   ],
-                  "activeView": "0c60c991-4704-43f1-88e6-f89860e951d3",
+                  "activeView": "44e5db0a-16e9-4306-95ad-66b110e381d8",
                   "id": "3"
                 },
                 "size": 254
@@ -127,8 +127,8 @@
         "title": "Terminal",
         "renderer": "always"
       },
-      "0c60c991-4704-43f1-88e6-f89860e951d3": {
-        "id": "0c60c991-4704-43f1-88e6-f89860e951d3",
+      "44e5db0a-16e9-4306-95ad-66b110e381d8": {
+        "id": "44e5db0a-16e9-4306-95ad-66b110e381d8",
         "contentComponent": "Terminal",
         "tabComponent": "props.defaultTabComponent",
         "title": "Terminal",
