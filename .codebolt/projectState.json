@@ -1,5 +1,4 @@
 {
-  "activeAgent": false,
   "currentLayout": {
     "grid": {
       "root": {
@@ -17,7 +16,7 @@
                   "activeView": "Code",
                   "id": "1"
                 },
-                "size": 582
+                "size": 441
               },
               {
                 "type": "leaf",
@@ -28,10 +27,10 @@
                   "activeView": "Agent Debug",
                   "id": "4"
                 },
-                "size": 278
+                "size": 419
               }
             ],
-            "size": 787
+            "size": 550
           },
           {
             "type": "branch",
@@ -41,29 +40,30 @@
                 "data": {
                   "views": [
                     "Chat",
+                    "Console",
                     "AI Debug",
-                    "Console"
+                    "Git"
                   ],
-                  "activeView": "Chat",
+                  "activeView": "Git",
                   "id": "2"
                 },
-                "size": 386
+                "size": 606
               },
               {
                 "type": "leaf",
                 "data": {
                   "views": [
                     "Preview",
-                    "bfe7f343-fe36-49b8-b76b-c41bf5fb2df6",
-                    "a0943863-a293-4395-b2f9-270060b66ecf"
+                    "1653adc1-d725-4a99-ad08-10cf2d3c5680",
+                    "0c60c991-4704-43f1-88e6-f89860e951d3"
                   ],
-                  "activeView": "a0943863-a293-4395-b2f9-270060b66ecf",
+                  "activeView": "0c60c991-4704-43f1-88e6-f89860e951d3",
                   "id": "3"
                 },
-                "size": 474
+                "size": 254
               }
             ],
-            "size": 683
+            "size": 920
           }
         ],
         "size": 860
@@ -94,17 +94,24 @@
         "title": "Chat",
         "renderer": "always"
       },
+      "Console": {
+        "id": "Console",
+        "contentComponent": "Console",
+        "tabComponent": "props.defaultTabComponent",
+        "title": "Console"
+      },
       "AI Debug": {
         "id": "AI Debug",
         "contentComponent": "AI Debug",
         "tabComponent": "props.defaultTabComponent",
         "title": "AI Debug"
       },
-      "Console": {
-        "id": "Console",
-        "contentComponent": "Console",
+      "Git": {
+        "id": "Git",
+        "contentComponent": "Git",
         "tabComponent": "props.defaultTabComponent",
-        "title": "Console"
+        "title": "Git",
+        "renderer": "always"
       },
       "Preview": {
         "id": "Preview",
@@ -113,15 +120,15 @@
         "title": "Preview",
         "renderer": "always"
       },
-      "bfe7f343-fe36-49b8-b76b-c41bf5fb2df6": {
-        "id": "bfe7f343-fe36-49b8-b76b-c41bf5fb2df6",
+      "1653adc1-d725-4a99-ad08-10cf2d3c5680": {
+        "id": "1653adc1-d725-4a99-ad08-10cf2d3c5680",
         "contentComponent": "Terminal",
         "tabComponent": "props.defaultTabComponent",
         "title": "Terminal",
         "renderer": "always"
       },
-      "a0943863-a293-4395-b2f9-270060b66ecf": {
-        "id": "a0943863-a293-4395-b2f9-270060b66ecf",
+      "0c60c991-4704-43f1-88e6-f89860e951d3": {
+        "id": "0c60c991-4704-43f1-88e6-f89860e951d3",
         "contentComponent": "Terminal",
         "tabComponent": "props.defaultTabComponent",
         "title": "Terminal",
@@ -129,180 +136,5 @@
       }
     },
     "activeGroup": "3"
-  },
-  "pinnedAgent": [
-    {
-      "title": "mainAgent",
-      "unique_id": "mainAgent",
-      "initial_message": "Hello! I'm your advanced AI developer. How can I assist you today?",
-      "description": "My Codebolt Agent",
-      "tags": [
-        ""
-      ],
-      "longDescription": "A basic agent designed for the Codebolt platform, offering a range of functionalities to enhance interaction with the platform.\n",
-      "avatarSrc": "https://placehold.co/200x200",
-      "avatarFallback": "CE",
-      "metadata": {
-        "agent_routing": {
-          "worksonblankcode": true,
-          "worksonexistingcode": true,
-          "supportedlanguages": [],
-          "supportedframeworks": []
-        },
-        "defaultagentllm": {
-          "strict": true,
-          "modelorder": [
-            "ollama2"
-          ]
-        },
-        "sdlc_steps_managed": [],
-        "llm_role": [
-          {
-            "name": "documentationllm",
-            "description": "LLM to be used for advanced Documentation. Please select a model that excels in documentation tasks.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.documentationmodels"
-            ]
-          },
-          {
-            "name": "testingllm",
-            "description": "LLM to be used for advanced Testing. Please select a model that excels in testing tasks.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.testingmodels"
-            ]
-          },
-          {
-            "name": "actionllm",
-            "description": "LLM to be used for executing advanced actions.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.actionmodels"
-            ]
-          }
-        ]
-      },
-      "actions": [
-        {
-          "name": "Execute",
-          "description": "Executes the given task.",
-          "detailDescription": "more detailed description",
-          "actionPrompt": "Please run this code"
-        }
-      ],
-      "author": "codebolt",
-      "version": "1.0.0",
-      "agentPath": "/Users/ravirawat/Desktop/cb/ApiAgents/.codeboltAgents/mainAgent",
-      "agentId": "mainAgent",
-      "id": "mainAgent",
-      "isLocal": true,
-      "currentPinned": true
-    },
-    {
-      "title": "testingAgent",
-      "unique_id": "testingAgent",
-      "initial_message": "Hello! I'm your advanced AI developer. How can I assist you today?",
-      "description": "My Codebolt Agent",
-      "tags": [
-        ""
-      ],
-      "longDescription": "A basic agent designed for the Codebolt platform, offering a range of functionalities to enhance interaction with the platform.\n",
-      "avatarSrc": "https://placehold.co/200x200",
-      "avatarFallback": "CE",
-      "metadata": {
-        "agent_routing": {
-          "worksonblankcode": true,
-          "worksonexistingcode": true,
-          "supportedlanguages": [],
-          "supportedframeworks": []
-        },
-        "defaultagentllm": {
-          "strict": true,
-          "modelorder": [
-            "ollama2"
-          ]
-        },
-        "sdlc_steps_managed": [],
-        "llm_role": [
-          {
-            "name": "documentationllm",
-            "description": "LLM to be used for advanced Documentation. Please select a model that excels in documentation tasks.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.documentationmodels"
-            ]
-          },
-          {
-            "name": "testingllm",
-            "description": "LLM to be used for advanced Testing. Please select a model that excels in testing tasks.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.testingmodels"
-            ]
-          },
-          {
-            "name": "actionllm",
-            "description": "LLM to be used for executing advanced actions.",
-            "strict": true,
-            "modelorder": [
-              "gpt-4-turbo",
-              "gpt-3.5-turbo",
-              "mistral7b.perplexity",
-              "mistral7b.any",
-              "llama2-70b",
-              "llama2-15b",
-              "group.actionmodels"
-            ]
-          }
-        ]
-      },
-      "actions": [
-        {
-          "name": "Execute",
-          "description": "Executes the given task.",
-          "detailDescription": "more detailed description",
-          "actionPrompt": "Please run this code"
-        }
-      ],
-      "author": "codebolt",
-      "version": "1.0.0",
-      "agentPath": "/Users/ravirawat/Desktop/cb/ApiAgents/.codeboltAgents/testingAgent",
-      "agentId": "testingAgent",
-      "id": "testingAgent",
-      "isLocal": true,
-      "currentPinned": true
-    }
-  ],
-  "projectCreated": true
+  }
 }

@@ -1,4 +1,0 @@
-node /Users/ravirawat/Desktop/cb/ApiAgents/src/index.js && echo COMMAN D_SUCCESS || echo COMMAND_FAILUREServer is running on port 3000^CCOMMAND_FAILURE
-bash-3.2$ COMMAND HAS FAILED
-cd /Users/ravirawat/Desktop/cb/ApiAgents
-bash-3.2$

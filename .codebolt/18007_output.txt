@@ -1,14 +1,0 @@
-npm install -g wrangler && echo COMMAND_SUCCESS || echo COMMAND_FAILUR E[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.
-[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
-[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K
-added 51 packages in 4s[1G[0K⠴[1G[0K
-[1G[0K⠴[1G[0K3 packages are looking for funding
-[1G[0K⠴[1G[0K  run `npm fund` for details
-[1G[0K⠴[1G[0KCOMMAND_SUCCESS
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

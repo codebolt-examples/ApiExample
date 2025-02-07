@@ -1,17 +1,0 @@
-cd /Users/ravirawat/Desktop/cb/ApiAgents && npm install && echo COMMAN D_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K
-added 1 package, and audited 2 packages in 730ms
-[1G[0K⠧[1G[0K
-1 [33m[1mmoderate[22m[39m severity vulnerability
-
-To address all issues (including breaking changes), run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-[1G[0K⠧[1G[0KCOMMAND_SUCCESS
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

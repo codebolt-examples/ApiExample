@@ -1,8 +1,0 @@
-mkdir-p routes middleware services && echo COMMAND_SUCCESS || echo CO MMAND_FAILURECOMMAND_SUCCESS
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

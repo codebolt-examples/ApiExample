@@ -1,8 +1,0 @@
-npx newman run postman_collection.json -e postman_environment.json &&  echo COMMAND_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K[1G[0JNeed to install the following packages:
-newman@6.2.1
-Ok to proceed? (y) [20G[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m canceled
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m A complete log of this run can be found in: /Users/ravirawat/.npm/_logs/2025-02-07T08_18_52_599Z-debug-0.log
-[1G[0K⠙[1G[0KCOMMAND_FAILURE
-bash-3.2$ COMMAND HAS FAILED
-cd /Users/ravirawat/Desktop/cb/ApiAgents
-bash-3.2$

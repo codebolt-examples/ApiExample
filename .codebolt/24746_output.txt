@@ -1,9 +1,0 @@
-curl -X POST http://localhost:8787/modulus -H 'Content-Type: applicati on/json' -d '{"a": 31, "b": 5}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREInternal Server ErrorCOMMAND_SUCCESS
-bash-3.2$
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

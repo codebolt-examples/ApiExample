@@ -6,7 +6,32 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     let toolResults = [];
     let customInstructions;
     const PROMPT = `
-    You are an AI agent specialized in testing APIs. Your primary responsibility is to ensure that the API endpoints are functioning correctly, efficiently, and securely. You have access to a variety of tools to assist you in this task, 
+    Create a system that automates the process of running, testing, and resolving issues in a project. The system should follow these steps:
+
+1. **Run the Project:**
+   - Start the project in development or production mode (e.g., \`npm start\`, \`node app.js\`, \`python manage.py runserver\`).
+   - Ensure the project runs without crashes or errors.
+   - Test all routes and endpoints, whether they are GET, POST, PUT, or DELETE. Use curl with the execute command tool to test the routes.
+   - Check if authorization is needed for any endpoints and include the necessary headers in the requests.
+
+2 **Identify Issues:**
+   - Analyze test results and logs to identify any failing tests or runtime errors.
+   - Check for common issues such as:
+     - Syntax errors.
+     - Missing dependencies.
+     - Incorrect environment configurations.
+     - API failures or network issues.
+     - Database connection errors.
+   - Use linting tools (e.g., ESLint, Prettier, Pylint) to identify code style issues and potential bugs.
+
+3. **Resolve Issues:**
+   - Automatically fix common issues such as:
+     - Formatting issues using tools like Prettier or Black.
+     - Syntax errors by suggesting corrections.
+     - Missing dependencies by installing them.
+   - For complex issues, use provided tools.
+   - If the issue cannot be resolved automatically, log it and provide a clear error message for manual intervention.
+
   ===== 
 OBJECTIVE
 
@@ -24,7 +49,9 @@ You accomplish a given task iteratively, breaking it down into clear steps and w
     
     1. Test each API endpoint to ensure it returns the correct status code, headers, and response body.
     2. Verify that the data returned by the API matches the expected format and content.
-    3.  Ensure that the API handles errors gracefully and returns appropriate error messages and status codes.
+    3. Ensure that the API handles errors gracefully and returns appropriate error messages and status codes.
+
+    Important: Your task is to test every API, do not create test cases.
 
     You should generate a detailed report after each testing cycle, including:
     - A summary of the tests conducted.
@@ -42,12 +69,12 @@ You accomplish a given task iteratively, breaking it down into clear steps and w
 
     const message = req.message.userMessage + `\n  Your tasks include:
     
-    1. **Endpoint Testing**: Test each API endpoint to ensure it returns the correct status code, headers, and response body.
-    2. **Data Validation**: Verify that the data returned by the API matches the expected format and content.
-    3. **Error Handling**: Ensure that the API handles errors gracefully and returns appropriate error messages and status codes.
-    4. **Performance Testing**: Conduct load testing to determine how the API performs under various levels of traffic.
-    5. **Security Testing**: Identify and report any security vulnerabilities in the API.
-    6. **Documentation Review**: Compare the API responses with the provided documentation to ensure consistency.
+    1. **Endpoint Testing**: Test each API endpoint to ensure it returns the correct status code, headers, and response body. If any issues are found, resolve them.
+    2. **Data Validation**: Verify that the data returned by the API matches the expected format and content. If discrepancies are found, resolve them.
+    3. **Error Handling**: Ensure that the API handles errors gracefully and returns appropriate error messages and status codes. If any issues are found, resolve them.
+    4. **Performance Testing**: Conduct load testing to determine how the API performs under various levels of traffic. If performance issues are found, resolve them.
+    5. **Security Testing**: Identify and report any security vulnerabilities in the API. If any vulnerabilities are found, resolve them.
+    6. **Documentation Review**: Compare the API responses with the provided documentation to ensure consistency. If inconsistencies are found, resolve them.
     `;
 
     let userMessage = setupUserMessage(message);
@@ -57,13 +84,10 @@ You accomplish a given task iteratively, breaking it down into clear steps and w
     let nextUserMessage = userMessage;
     nextUserMessage.push({ type: "text", text: environmentDetail })
     apiConversationHistory.push({ role: "user", content: nextUserMessage })
-
-
     let isStructureCreated = false
     while (!isStructureCreated) {
         try {
             const response = await attemptLlmRequest(apiConversationHistory, tools, PROMPT)
-
             let isMessagePresentinReply = false;
             for (const contentBlock of response.choices) {
                 if (contentBlock.message) {

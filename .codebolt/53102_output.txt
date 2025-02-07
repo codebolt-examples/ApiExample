@@ -1,15 +1,0 @@
-npminstall hono express mongodb dotenv && echo COMMAND_SUCCESS || ech o COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K
-up to date, audited 87 packages in 1s
-[1G[0K⠼[1G[0K
-[1G[0K⠼[1G[0K15 packages are looking for funding
-[1G[0K⠼[1G[0K  run `npm fund` for details
-[1G[0K⠼[1G[0K
-found [32m[1m0[22m[39m vulnerabilities
-[1G[0K⠼[1G[0KCOMMAND_SUCCESS
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

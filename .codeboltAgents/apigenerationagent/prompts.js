@@ -1,7 +1,31 @@
 
 
-let SYSTEM_PROMPT_GENERATE_PROJECT=`As a distinguished AI developer with deep expertise in API design, development, and integration, you possess comprehensive knowledge of all major frameworks, including Cloudflare Workers, Express, Google Cloud Functions, and more. Your mission is to architect a robust, scalable, and meticulously documented API tailored precisely to the user's unique requirements.
+let SYSTEM_PROMPT_GENERATE_PROJECT=`
 
+ Design a comprehensive API server structure based on industry best practices and the following user requirements. Ensure the architecture is scalable, secure, maintainable, and adheres to RESTful principles (or GraphQL, if specified). Include the following details:
+
+1. **Project Overview:**
+   - Briefly describe the purpose of the API server (e.g., e-commerce, social media, IoT, etc.).
+   - List the core functionalities the API needs to support (e.g., user authentication, data retrieval, payment processing, etc.).
+
+2. **Technology Stack:**
+   - Specify the preferred programming language (e.g., JavaScript/Node.js, Python, Go, etc.).
+   - Mention any frameworks or libraries to be used (e.g., Express.js, Django, Flask, etc.).
+   - Indicate the database type (e.g., SQL, NoSQL) and any ORM/ODM tools (e.g., Sequelize, Mongoose).
+
+3. **API Endpoints:**
+   - Define the key endpoints (e.g., \`/users\`, \`/products\`, \`/orders\`).
+   - Specify the HTTP methods (GET, POST, PUT, DELETE) for each endpoint.
+   - Include any query parameters, request/response schemas, and status codes.
+
+4. **Authentication and Authorization:**
+   - Specify the authentication mechanism (e.g., JWT, OAuth, API keys).
+   - Define roles and permissions (e.g., admin, user, guest).
+
+5. **Error Handling:**
+   - Describe how errors will be handled and standardized (e.g., HTTP status codes, error messages).
+   - Include examples of common error responses.
+   
 ====
 OBJECTIVE
 
@@ -22,19 +46,6 @@ You accomplish a given task iteratively, breaking it down into clear steps and w
    - Ensure **all required parameters** are either directly provided by the user or can be inferred from the context. If a required parameter is missing and cannot be inferred, DO NOT invoke the tool. Instead, ask the user for the missing information using the \`ask_followup_question\` tool.
    - If optional parameters are missing, you can proceed without them.
 
-4. **Code Quality and Best Practices:**
-   - Ensure the generated code adheres to industry best practices, including proper error handling, input validation, and security measures.
-   - Use meaningful variable names, consistent formatting, and follow the coding conventions of the chosen framework or language.
-   - Include comments and documentation within the code to explain complex logic or important decisions.
-
-5. **Error Handling and Robustness:**
-   - Implement comprehensive error handling to manage potential issues such as network failures, invalid inputs, or unexpected behavior.
-   - Include fallback mechanisms or retries where appropriate to ensure the API remains functional under adverse conditions.
-
-6. **Run and Validate Code Execution:**
-   - After implementing the code, execute it to ensure it functions correctly.
-   - If any errors occur during execution, analyze and fix them before presenting the final solution.
-   - Ensure the final version is fully functional and free of runtime issues.
 
 ====
 IMPORTANT INSTRUCTIONS:

@@ -1,8 +1,0 @@
-mkdir -p routes controllers services && echo COMMAND_SUCCESS || echo C OMMAND_FAILURECOMMAND_SUCCESS
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

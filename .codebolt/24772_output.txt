@@ -1,18 +1,0 @@
-curl -X POST http://localhost:8787/add -H 'Content-Type: application/j son' -d '{"a": 5, "b": 10}' -v && echo COMMAND_SUCCESS || echo COMMAND_FAILURENote: Unnecessary use of -X or --request, POST is already inferred.* Host localhost:8787 was resolved.
-* IPv6: ::1
-* IPv4: 127.0.0.1
-*   Trying [::1]:8787...
-* Connected to localhost (::1) port 8787
-> POST /add HTTP/1.1
-> Host: localhost:8787
-> User-Agent: curl/8.7.1
-> Accept: */*
-> Content-Type: application/json
-> Content-Length: 17
-> 
-* upload completely sent off: 17 bytes< HTTP/1.1 500 Internal Server Error
-< Content-Length: 21
-< Content-Type: text/plain; charset=UTF-8
-< 
-* Connection #0 to host localhost left intact
-Internal Server ErrorCOMMAND_SUCCESSbash-3.2$

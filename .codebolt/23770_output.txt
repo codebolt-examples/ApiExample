@@ -1,10 +1,0 @@
-cd /Users/ravirawat/Desktop/cb/ApiAgents && npm install && echo COMMAN D_SUCCESS || echo COMMAND_FAILURE[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m E404
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m Not Found - GET https://registry.npmjs.org/@cloudflare%2fworker-hono - Not found
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m  '@cloudflare/worker-hono@^2.3.1' is not in this registry.
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m Note that you can also install from a
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m [94m404[39m tarball, folder, http url, or git url.
-[1G[0K⠹[1G[0K[1mnpm[22m [31merror[39m A complete log of this run can be found in: /Users/ravirawat/.npm/_logs/2025-02-06T11_54_25_820Z-debug-0.log
-[1G[0K⠹[1G[0KCOMMAND_FAILURE COMMAND HAS FAILED
-bash-3.2$

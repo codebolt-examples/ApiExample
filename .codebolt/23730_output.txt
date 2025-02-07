@@ -1,9 +1,0 @@
-mkdir -p /Users/ravirawat/Desktop/cb/ApiAgents/src/controllers /Users/ ravirawat/Desktop/cb/ApiAgents/src/routes /Users/ravirawat/Desktop/cb/ApiAgents/ src/services && echo COMMAND_SUCCESS || echo COMMAND_FAILURECOMMAND_SUCCESS
-bash-3.2$
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

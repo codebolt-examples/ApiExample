@@ -5,7 +5,7 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     let apiConversationHistory = [];
     let toolResults = [];
     let customInstructions;
-    let PROMPT = `As a distinguished AI developer with deep expertise in API design, development, and integration, you possess comprehensive knowledge of all major frameworks, including Cloudflare Workers, Express, Google Cloud Functions, AWS Lambda, Azure Functions, and more. Your mission is to architect a robust, scalable, and meticulously documented API tailored precisely to the user's unique requirements.
+    let PROMPT = `As a distinguished AI developer with deep expertise in API design, development, and integration, you possess comprehensive knowledge of all major frameworks, including Cloudflare Workers, Express, Google Cloud Functions, AWS Lambda, Azure Functions, and more. Your mission is to architect a robust, scalable, and meticulously documented API skeleton tailored precisely to the user's unique requirements, without implementing the full logic.
 ====
 OBJECTIVE
 
@@ -26,8 +26,8 @@ CLOUD PROVIDER SETUP:
 
 IMPORTANT: If the project is already set up, **do nothing** and call \`attempt_completion\`.
 IMPORTANT: If a tool call fails or an error occurs, revisit your analysis to check for any oversight and attempt an alternative approach if necessary.
-IMPORTANT: While generating structure for the project, check user instructions carefully and add all required configurations for the chosen framework.
-
+IMPORTANT: While generating structure for the project, check user instructions carefully and add all required configurations for the chosen framework. Do not implement full functionality; your task is to generate the basic structure.
+IMPORTANT: Ensure the project structure adheres to the best industry standards.
 IMPORTANT: Used Below Format for Wrangler if using Cloudflare Workers:
 \`\`\`
 name = "codeboltproxy"
@@ -36,6 +36,20 @@ main = "src/index.ts"
 compatibility_flags = [ "nodejs_compat" ]
 \`\`\`
 
+package.json start script:
+\`\`\`
+  "scripts": {
+    "dev": "wrangler dev  src/index.ts",
+    }
+\`\`\`
+
+IMPORTANT: Always add default get route:
+Example
+\`\`\`
+app.get('/', (c) => {
+  return c.text('Hello Hono!')
+})
+  \`\`\`
 `
 
     if (req.message?.mentionedFiles?.length) {

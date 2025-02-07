@@ -1,4 +1,0 @@
-curl -X POST http://localhost:8787/add -H 'Content-Type: application/j son' -H 'Authorization: Bearer validtoken' -d '{"a": 3, "b": 2}' && echo COMMAND _SUCCESS || echo COMMAND_FAILUREcurl: (7) Failed to connect to localhost port 8787 after 0 ms: Couldn't connect to server
-COMMAND_FAILURE
-bash-3.2$ COMMAND HAS FAILED
-bash-3.2$
