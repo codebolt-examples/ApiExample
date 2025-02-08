@@ -1,0 +1,4 @@
+curl -X POST http://localhost:3000/add -d '{"a":5,"b":10}' -H "Content -Type: application/json" && echo COMMAND_SUCCESS || echo COMMAND_FAILUREcurl: (7) Failed to connect to localhost port 3000 after 0 ms: Couldn't connect to server
+COMMAND_FAILURE
+bash-3.2$ COMMAND HAS FAILED
+bash-3.2$

@@ -1,0 +1,435 @@
+npm run dev && echo COMMAND_SUCCESS || echo COMMAND_FAILURE> codeboltproxy@1.0.0 dev
+> wrangler dev src/index.ts[1G[0K⛅️ wrangler 3.107.3
+[38;2;255;136;0m--------------------[39m╭───────────────────────────╮
+│  [b] open a browser       │
+│  [d] open devtools        │
+│  [l] turn off local mode  │
+│  [c] clear console        │
+│  [x] to exit              │
+╰───────────────────────────╯[7A[0J╭───────────────────────────╮
+│  [b] open a browser       │
+│  [d] open devtools        │
+│  [l] turn off local mode  │
+│  [c] clear console        │
+│  [x] to exit              │
+╰───────────────────────────╯[7A[0J[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mBuild failed with 33 errors:[0m
+
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "zlib"[0m
+  
+      node_modules/body-parser/lib/read.js:20:19:
+  [37m      20 │ var zlib = require([32m'zlib'[37m)
+           ╵                    [32m~~~~~~[0m
+  
+    The package "zlib" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve
+  "querystring"[0m
+  
+      node_modules/body-parser/lib/types/urlencoded.js:251:20:
+  [37m      251 │       mod = require([32m'querystring'[37m)
+            ╵                     [32m~~~~~~~~~~~~~[0m
+  
+    The package "querystring" wasn't found on the file system but is built into
+  node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_dateto 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/content-disposition/index.js:22:23:
+  [37m      22 │ var basename = require([32m'path'[37m).basename
+           ╵                        [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "crypto"[0m
+  
+      node_modules/cookie-signature/index.js:5:21:
+  [37m      5 │ var crypto = require([32m'crypto'[37m);
+          ╵                      [32m~~~~~~~~[0m
+  
+    The package "crypto" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "events"[0m
+  
+      node_modules/destroy/index.js:15:27:
+  [37m      15 │ var EventEmitter = require([32m'events'[37m).EventEmitter
+           ╵                            [32m~~~~~~~~[0m
+  
+    The package "events" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "fs"[0m
+  
+      node_modules/destroy/index.js:16:25:
+  [37m      16 │ var ReadStream = require([32m'fs'[37m).ReadStream
+           ╵                          [32m~~~~[0m
+  
+    The package "fs" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "stream"[0m
+  
+      node_modules/destroy/index.js:17:21:
+  [37m      17 │ var Stream = require([32m'stream'[37m)
+           ╵                      [32m~~~~~~~~[0m
+  
+    The package "stream" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "zlib"[0m
+  
+      node_modules/destroy/index.js:18:19:
+  [37m      18 │ var Zlib = require([32m'zlib'[37m)
+           ╵                    [32m~~~~~~[0m
+  
+    The package "zlib" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "crypto"[0m
+  
+      node_modules/etag/index.js:21:21:
+  [37m      21 │ var crypto = require([32m'crypto'[37m)
+           ╵[32m~~~~~~~~[0m
+  
+    The package "crypto" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "fs"[0m
+  
+      node_modules/etag/index.js:22:20:
+  [37m      22 │ var Stats = require([32m'fs'[37m).Stats
+           ╵                     [32m~~~~[0m
+  
+    The package "fs" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "http"[0m
+  
+      node_modules/express/lib/application.js:23:19:
+  [37m      23 │ var http = require([32m'http'[37m);
+           ╵                    [32m~~~~~~[0m
+  
+    The package "http" wasn't found on the file system but is built into node.- Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/express/lib/application.js:30:22:
+  [37m      30 │ var resolve = require([32m'path'[37m).resolve;
+           ╵                       [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "events"[0m
+  
+      node_modules/express/lib/express.js:16:27:
+  [37m      16 │ var EventEmitter = require([32m'events'[37m).EventEmitter;
+           ╵                            [32m~~~~~~~~[0m
+  
+    The package "events" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "net"[0m
+  
+      node_modules/express/lib/request.js:18:19:
+  [37m      18 │ var isIP = require([32m'net'[37m).isIP;
+           ╵                    [32m~~~~~[0m
+  
+    The package "net" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "http"[0m
+  
+      node_modules/express/lib/request.js:20:19:
+  [37m      20 │ var http = require([32m'http'[37m);
+           ╵                    [32m~~~~~~[0m
+  
+    The package "http" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "http"[0m
+  
+      node_modules/express/lib/response.js:21:19:
+  [37m      21 │ var http = require([32m'http'[37m);
+           ╵                    [32m~~~~~~[0m
+  
+    The package "http" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/express/lib/response.js:24:19:
+  [37m      24 │ var path = require([32m'path'[37m);
+           ╵                    [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve
+  "querystring"[0m
+  
+      node_modules/express/lib/utils.js:24:26:
+  [37m      24 │ var querystring = require([32m'querystring'[37m);
+           ╵                           [32m~~~~~~~~~~~~~[0m
+  
+    The package "querystring" wasn't found on the file system but is built into
+  node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/express/lib/view.js:17:19:
+  [37m      17 │ var path = require([32m'path'[37m);
+           ╵                    [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "fs"[0m
+  
+      node_modules/express/lib/view.js:18:17:
+  [37m      18 │ var fs = require([32m'fs'[37m);
+           ╵[32m~~~~[0m
+  
+    The package "fs" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve
+  "string_decoder"[0m
+  
+      node_modules/iconv-lite/encodings/internal.js:49:28:
+  [37m      49 │ var StringDecoder =
+  require([32m'string_decoder'[37m).StringDecoder;
+           ╵                             [32m~~~~~~~~~~~~~~~~[0m
+  
+    The package "string_decoder" wasn't found on the file system but is built
+  into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/mime-types/index.js:16:22:
+  [37m      16 │ var extname = require([32m'path'[37m).extname
+           ╵[32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/mime/mime.js:1:19:
+  [37m      1 │ var path = require([32m'path'[37m);
+          ╵                    [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "fs"[0m
+  
+      node_modules/mime/mime.js:2:17:
+  [37m      2 │ var fs = require([32m'fs'[37m);
+          ╵                  [32m~~~~[0m
+  
+    The package "fs" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module namewith "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "url"[0m
+  
+      node_modules/parseurl/index.js:15:18:
+  [37m      15 │ var url = require([32m'url'[37m)
+           ╵                   [32m~~~~~[0m
+  
+    The package "url" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "buffer"[0m
+  
+      node_modules/safe-buffer/index.js:3:21:
+  [37m      3 │ var buffer = require([32m'buffer'[37m)
+          ╵                      [32m~~~~~~~~[0m
+  
+    The package "buffer" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "buffer"[0m
+  
+      node_modules/safer-buffer/safer.js:5:21:
+  [37m      5 │ var buffer = require([32m'buffer'[37m)
+          ╵                      [32m~~~~~~~~[0m
+  
+    The package "buffer" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "fs"[0m
+  
+      node_modules/send/index.js:23:17:
+  [37m      23 │ var fs = require([32m'fs'[37m)
+           ╵                  [32m~~~~[0m
+  
+    The package "fs" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/send/index.js:28:19:
+  [37m      28 │ varpath = require([32m'path'[37m)
+           ╵                    [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "stream"[0m
+  
+      node_modules/send/index.js:30:21:
+  [37m      30 │ var Stream = require([32m'stream'[37m)
+           ╵                      [32m~~~~~~~~[0m
+  
+    The package "stream" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "util"[0m
+  
+      node_modules/send/index.js:31:19:
+  [37m      31 │ var util = require([32m'util'[37m)
+           ╵                    [32m~~~~~~[0m
+  
+    The package "util" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "path"[0m
+  
+      node_modules/serve-static/index.js:19:22:
+  [37m      19 │ var resolve = require([32m'path'[37m).resolve
+           ╵                       [32m~~~~~~[0m
+  
+    The package "path" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "url"[0m
+  
+      node_modules/serve-static/index.js:21:18:
+  [37m      21 │ var url = require([32m'url'[37m)
+           ╵                   [32m~~~~~[0m
+  
+    The package "url" wasn't found on the file system but is built into node.
+    - Make sure to prefix the module name with "node:" or update your
+  compatibility_date to 2024-09-23 or later.
+  
+  
+  
+
+[39m
+╭───────────────────────────╮
+│  [b] open a browser       │
+│  [d] open devtools        │
+│  [l] turn off local mode  │
+│  [c] clear console        │
+│  [x] to exit              │
+╰───────────────────────────╯[7A[0J[33m🪵  Logs were written to "/Users/ravirawat/.wrangler/logs/wrangler-2025-02-08_06-01-31_320.log"[39m╭───────────────────────────╮
+│  [b] open a browser       │
+│  [d] open devtools        │
+│  [l] turn off local mode  │
+│  [c] clear console        │
+│  [x] to exit              │
+╰───────────────────────────╯[1G[0K⠙[1G[0KCOMMAND_FAILURE
+bash-3.2$ COMMAND HAS FAILED
+bash-3.2$

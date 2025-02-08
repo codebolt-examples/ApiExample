@@ -9,7 +9,7 @@ let customInstructions;
 codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
 
     let apiStructure = await generateOpenAPIStructure(req.message.userMessage);
-    console.log(apiStructure)
+    // console.log(apiStructure)
 
     let { projectPath } = await codebolt.project.getProjectPath();
         let tools = await codebolt.MCP.getAllMCPTools('codebolt');
@@ -61,9 +61,9 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
                         } else {
                             console.log("calling tool with parms",toolName, toolInput)
                             const [didUserReject, result] = await codebolt.MCP.executeTool(toolName, toolInput);
-                            console.log(didUserReject, result)
+                            // console.log(didUserReject, result)
                             toolResults.push(getToolResult(toolUseId, result))
-                            console.log(toolResults)
+                            // console.log(toolResults)
                             if (didUserReject) {
                                 userRejectedToolUse = true
                             }

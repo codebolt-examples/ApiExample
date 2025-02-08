@@ -41,7 +41,7 @@ const getToolResult = (tool_call_id, content) => {
             tools: tools,
             tool_choice: "auto",
         };
-        console.log(JSON.stringify(aiMessages))
+        // console.log(JSON.stringify(aiMessages))
       
         let { completion } = await codebolt.llm.inference(createParams);
         return completion

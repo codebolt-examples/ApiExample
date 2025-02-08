@@ -5,32 +5,15 @@
         "type": "branch",
         "data": [
           {
-            "type": "branch",
-            "data": [
-              {
-                "type": "leaf",
-                "data": {
-                  "views": [
-                    "Code"
-                  ],
-                  "activeView": "Code",
-                  "id": "1"
-                },
-                "size": 441
-              },
-              {
-                "type": "leaf",
-                "data": {
-                  "views": [
-                    "Agent Debug"
-                  ],
-                  "activeView": "Agent Debug",
-                  "id": "4"
-                },
-                "size": 419
-              }
-            ],
-            "size": 550
+            "type": "leaf",
+            "data": {
+              "views": [
+                "Code"
+              ],
+              "activeView": "Code",
+              "id": "1"
+            },
+            "size": 838
           },
           {
             "type": "branch",
@@ -40,30 +23,29 @@
                 "data": {
                   "views": [
                     "Chat",
-                    "Console",
                     "AI Debug",
-                    "Git"
+                    "Console",
+                    "68ab189a-1b35-479d-8fcb-653b6070e926"
                   ],
-                  "activeView": "Git",
+                  "activeView": "68ab189a-1b35-479d-8fcb-653b6070e926",
                   "id": "2"
                 },
-                "size": 606
+                "size": 430
               },
               {
                 "type": "leaf",
                 "data": {
                   "views": [
                     "Preview",
-                    "1653adc1-d725-4a99-ad08-10cf2d3c5680",
-                    "44e5db0a-16e9-4306-95ad-66b110e381d8"
+                    "Agent Debug"
                   ],
-                  "activeView": "44e5db0a-16e9-4306-95ad-66b110e381d8",
+                  "activeView": "Agent Debug",
                   "id": "3"
                 },
-                "size": 254
+                "size": 430
               }
             ],
-            "size": 920
+            "size": 632
           }
         ],
         "size": 860
@@ -80,13 +62,6 @@
         "title": "Code",
         "renderer": "always"
       },
-      "Agent Debug": {
-        "id": "Agent Debug",
-        "contentComponent": "Agent Debug",
-        "tabComponent": "props.defaultTabComponent",
-        "title": "Agent Debug",
-        "renderer": "always"
-      },
       "Chat": {
         "id": "Chat",
         "contentComponent": "Chat",
@@ -94,23 +69,23 @@
         "title": "Chat",
         "renderer": "always"
       },
-      "Console": {
-        "id": "Console",
-        "contentComponent": "Console",
-        "tabComponent": "props.defaultTabComponent",
-        "title": "Console"
-      },
       "AI Debug": {
         "id": "AI Debug",
         "contentComponent": "AI Debug",
         "tabComponent": "props.defaultTabComponent",
         "title": "AI Debug"
       },
-      "Git": {
-        "id": "Git",
-        "contentComponent": "Git",
+      "Console": {
+        "id": "Console",
+        "contentComponent": "Console",
         "tabComponent": "props.defaultTabComponent",
-        "title": "Git",
+        "title": "Console"
+      },
+      "68ab189a-1b35-479d-8fcb-653b6070e926": {
+        "id": "68ab189a-1b35-479d-8fcb-653b6070e926",
+        "contentComponent": "Terminal",
+        "tabComponent": "props.defaultTabComponent",
+        "title": "Terminal",
         "renderer": "always"
       },
       "Preview": {
@@ -120,21 +95,104 @@
         "title": "Preview",
         "renderer": "always"
       },
-      "1653adc1-d725-4a99-ad08-10cf2d3c5680": {
-        "id": "1653adc1-d725-4a99-ad08-10cf2d3c5680",
-        "contentComponent": "Terminal",
+      "Agent Debug": {
+        "id": "Agent Debug",
+        "contentComponent": "Agent Debug",
         "tabComponent": "props.defaultTabComponent",
-        "title": "Terminal",
-        "renderer": "always"
-      },
-      "44e5db0a-16e9-4306-95ad-66b110e381d8": {
-        "id": "44e5db0a-16e9-4306-95ad-66b110e381d8",
-        "contentComponent": "Terminal",
-        "tabComponent": "props.defaultTabComponent",
-        "title": "Terminal",
+        "title": "Agent Debug",
         "renderer": "always"
       }
     },
     "activeGroup": "3"
-  }
+  },
+  "activeAgent": false,
+  "pinnedAgent": [
+    {
+      "title": "mainAgent",
+      "unique_id": "mainAgent",
+      "initial_message": "Hello! I'm your advanced AI developer. How can I assist you today?",
+      "description": "My Codebolt Agent",
+      "tags": [
+        ""
+      ],
+      "longDescription": "A basic agent designed for the Codebolt platform, offering a range of functionalities to enhance interaction with the platform.\n",
+      "avatarSrc": "https://placehold.co/200x200",
+      "avatarFallback": "CE",
+      "metadata": {
+        "agent_routing": {
+          "worksonblankcode": true,
+          "worksonexistingcode": true,
+          "supportedlanguages": [],
+          "supportedframeworks": []
+        },
+        "defaultagentllm": {
+          "strict": true,
+          "modelorder": [
+            "ollama2"
+          ]
+        },
+        "sdlc_steps_managed": [],
+        "llm_role": [
+          {
+            "name": "documentationllm",
+            "description": "LLM to be used for advanced Documentation. Please select a model that excels in documentation tasks.",
+            "strict": true,
+            "modelorder": [
+              "gpt-4-turbo",
+              "gpt-3.5-turbo",
+              "mistral7b.perplexity",
+              "mistral7b.any",
+              "llama2-70b",
+              "llama2-15b",
+              "group.documentationmodels"
+            ]
+          },
+          {
+            "name": "testingllm",
+            "description": "LLM to be used for advanced Testing. Please select a model that excels in testing tasks.",
+            "strict": true,
+            "modelorder": [
+              "gpt-4-turbo",
+              "gpt-3.5-turbo",
+              "mistral7b.perplexity",
+              "mistral7b.any",
+              "llama2-70b",
+              "llama2-15b",
+              "group.testingmodels"
+            ]
+          },
+          {
+            "name": "actionllm",
+            "description": "LLM to be used for executing advanced actions.",
+            "strict": true,
+            "modelorder": [
+              "gpt-4-turbo",
+              "gpt-3.5-turbo",
+              "mistral7b.perplexity",
+              "mistral7b.any",
+              "llama2-70b",
+              "llama2-15b",
+              "group.actionmodels"
+            ]
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Execute",
+          "description": "Executes the given task.",
+          "detailDescription": "more detailed description",
+          "actionPrompt": "Please run this code"
+        }
+      ],
+      "author": "codebolt",
+      "version": "1.0.0",
+      "agentPath": "/Users/ravirawat/Desktop/cb/ApiAgents/.codeboltAgents/mainAgent",
+      "agentId": "mainAgent",
+      "id": "mainAgent",
+      "isLocal": true,
+      "currentPinned": true
+    }
+  ],
+  "projectCreated": true
 }

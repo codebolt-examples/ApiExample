@@ -52,8 +52,8 @@ app.get('/', (c) => {
   \`\`\`
 `
 
-    if (req.message?.mentionedFiles?.length) {
-        let { result } = await codebolt.fs.readFile(req.message.mentionedFiles[0]);
+    if (req?.message?.mentionedFiles?.length) {
+        let { result } = await codebolt.fs.readFile(req?.message?.mentionedFiles[0]);
         customInstructions = result;
     }
     let { projectPath } = await codebolt.project.getProjectPath();
@@ -107,9 +107,9 @@ app.get('/', (c) => {
                         } else {
                             console.log("calling tool with parms", toolName, toolInput)
                             const [didUserReject, result] = await codebolt.MCP.executeTool(toolName, toolInput);
-                            console.log(didUserReject, result)
+                            // console.log(didUserReject, result)
                             toolResults.push(getToolResult(toolUseId, result))
-                            console.log(toolResults)
+                            // console.log(toolResults)
                             if (didUserReject) {
                                 userRejectedToolUse = true
                             }
