@@ -1,7 +1,0 @@
-npm run build&& echo COMMAND_SUCCESS || echo COMMAND_FAILURE[1mnpm[22m [31merror[39m Missing script: "build"
-[1mnpm[22m [31merror[39m
-[1mnpm[22m [31merror[39m To see a list of scripts, run:
-[1mnpm[22m [31merror[39m   npm run[1mnpm[22m [31merror[39m A complete log of this run can be found in: /Users/ravirawat/.npm/_logs/2025-02-08T05_56_13_629Z-debug-0.log
-[1G[0KCOMMAND_FAILURE
-bash-3.2$ COMMAND HAS FAILED
-bash-3.2$

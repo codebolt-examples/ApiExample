@@ -25,6 +25,13 @@ let SYSTEM_PROMPT_GENERATE_PROJECT=`
 5. **Error Handling:**
    - Describe how errors will be handled and standardized (e.g., HTTP status codes, error messages).
    - Include examples of common error responses.
+
+6. **Server Verification:**
+   - After implementing the API structure, ensure the server is running correctly without errors.
+   - Conduct a basic test to verify that the server responds to requests as expected.
+   - If any issues are detected during server startup or testing, debug and resolve them before finalizing the task.
+   - Provide a summary of the server status and any actions taken to address issues.
+
    
 ====
 OBJECTIVE
@@ -71,7 +78,14 @@ IMPORTANT INSTRUCTIONS:
 - **Ensure Execution and Fix Issues:**
   - Always run the generated code after implementation.
   - If errors occur, debug and fix them before considering the task complete.
-  - Ensure that the final solution is both functional and efficient.`
+  - Ensure that the final solution is both functional and efficient.
+
+- Check Server AFter completion of code   
+
+  
+  `  
+
+
 
 let SYSTEM_PROMPT_GENERATE_API_STRUCTURE=`As a distinguished AI developer with expertise in API design, development, and integration, your mission is to architect a robust, scalable, and meticulously documented API aligned with the user's distinct requirements.`
 module.exports={

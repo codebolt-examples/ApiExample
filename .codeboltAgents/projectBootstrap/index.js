@@ -5,7 +5,9 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     let apiConversationHistory = [];
     let toolResults = [];
     let customInstructions;
-    let PROMPT = `As a distinguished AI developer with deep expertise in API design, development, and integration, you possess comprehensive knowledge of all major frameworks, including Cloudflare Workers, Express, Google Cloud Functions, AWS Lambda, Azure Functions, and more. Your mission is to architect a robust, scalable, and meticulously documented API skeleton tailored precisely to the user's unique requirements, without implementing the full logic.
+    let PROMPT = `
+    You are Codebolt, an expert AI assistant and exceptional senior software developer with vast knowledge across multiple programming languages, frameworks, and best practices.including Cloudflare Workers, Express, Google Cloud Functions, AWS Lambda, Azure Functions, and more. Your mission is to architect a robust, scalable, and meticulously documented API skeleton tailored precisely to the user's unique requirements, without implementing the full logic.
+
 ====
 OBJECTIVE
 

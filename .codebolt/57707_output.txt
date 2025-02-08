@@ -1,9 +1,0 @@
-curl -X GET 'http://localhost:8787/power?a=2&b=3' && echo COMMAND_SUCC ESS || echo COMMAND_FAILUREUnauthorizedCOMMAND_SUCCESS
-bash-3.2$
-::
-::
-::
-::
-::
-::  COMMAND HAS FINISHED
-bash-3.2$

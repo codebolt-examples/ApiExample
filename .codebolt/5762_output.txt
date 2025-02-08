@@ -1,4 +1,0 @@
-curl -X POSThttp://localhost:PORT/divide -H "Content-Type: applicatio n/json" -d '{"a":20, "b":10}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREcurl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
-COMMAND_FAILURE
-bash-3.2$ COMMAND HAS FAILED
-bash-3.2$
