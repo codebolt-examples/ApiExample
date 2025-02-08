@@ -40,6 +40,7 @@ package.json start script:
 \`\`\`
   "scripts": {
     "dev": "wrangler dev  src/index.ts",
+     "start": "wrangler dev  src/index.ts",
     }
 \`\`\`
 

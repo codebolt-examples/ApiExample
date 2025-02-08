@@ -1,0 +1,4 @@
+curl -X POST http://localhost:8787/multiply -H "Content-Type: applicat ion/json" -d '{"a":10, "b":20}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREcurl: (7) Failed to connect to localhostport 8787 after 0 ms: Couldn't connect to server
+COMMAND_FAILURE
+bash-3.2$ COMMAND HAS FAILED
+bash-3.2$

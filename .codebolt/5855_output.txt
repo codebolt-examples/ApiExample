@@ -1,0 +1,18 @@
+curl -X POST http://localhost:1212/add -H "Content-Type: application/j son" -d '{"a":10, "b":20}' && echo COMMAND_SUCCESS || echo COMMAND_FAILURE<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /add</pre>
+</body>
+</html>COMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

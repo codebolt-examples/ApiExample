@@ -13,7 +13,7 @@
               "activeView": "Code",
               "id": "1"
             },
-            "size": 838
+            "size": 1159.12109375
           },
           {
             "type": "branch",
@@ -27,7 +27,7 @@
                     "Console",
                     "68ab189a-1b35-479d-8fcb-653b6070e926"
                   ],
-                  "activeView": "68ab189a-1b35-479d-8fcb-653b6070e926",
+                  "activeView": "Chat",
                   "id": "2"
                 },
                 "size": 430
@@ -45,7 +45,7 @@
                 "size": 430
               }
             ],
-            "size": 632
+            "size": 310.87890625
           }
         ],
         "size": 860
@@ -103,7 +103,7 @@
         "renderer": "always"
       }
     },
-    "activeGroup": "3"
+    "activeGroup": "1"
   },
   "activeAgent": false,
   "pinnedAgent": [

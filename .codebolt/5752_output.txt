@@ -1,0 +1,4 @@
+curl -X POST http://localhost:PORT/subtract -H "Content-Type: applicat ion/json" -d '{"a":20, "b":10}' && echo COMMAND_SUCCESS || echo COMMAND_FAILUREcurl: (3) URL rejected: Port number wasnot a decimal number between 0 and 65535
+COMMAND_FAILURE
+bash-3.2$ COMMAND HAS FAILED
+bash-3.2$

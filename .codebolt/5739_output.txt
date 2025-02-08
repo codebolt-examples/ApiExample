@@ -1,0 +1,11 @@
+echo$? && echo COMMAND_SUCCESS || echo COMMAND_FAILURE
+0
+COMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$

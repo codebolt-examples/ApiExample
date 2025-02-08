@@ -1,0 +1,18 @@
+lsof -iTCP -sTCP:LISTEN -P && echo COMMAND_SUCCESS || echo COMMAND_FAI LURECOMMAND    PID      USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+rapportd   567 ravirawat    8u  IPv4 0x2219dbfefc796257      0t0  TCP *:51051 (LISTEN)
+rapportd   567 ravirawat    9u  IPv6 0xfb5147b40fcec923      0t0  TCP *:51051 (LISTEN)
+ControlCe  644 ravirawat    8u  IPv4 0x28334ff7c8e218b1      0t0  TCP *:7000 (LISTEN)
+ControlCe  644 ravirawat    9u  IPv6 0xad551776aac2c123      0t0  TCP *:7000 (LISTEN)
+ControlCe  644 ravirawat   10u  IPv4 0x4a500e957218cf87      0t0  TCP *:5000 (LISTEN)
+ControlCe  644 ravirawat   11u  IPv6 0x775639130897c7ba      0t0  TCP *:5000 (LISTEN)mongod    1284 ravirawat    9u  IPv4 0x12d0848c46c970ee      0t0  TCP localhost:27017 (LISTEN)mongod    1284 ravirawat   10u  IPv6 0x42e3ec358d00d6e0      0t0  TCP localhost:27017 (LISTEN)
+node      4994 ravirawat   19u  IPv6 0x8209de07a38793ae      0t0  TCP *:1212 (LISTEN)
+Electron  5176 ravirawat   50u  IPv6 0x568ef0b7de731374      0t0  TCP *:12345 (LISTEN)
+COMMAND_SUCCESS
+bash-3.2$
+::
+::
+::
+::
+::
+::  COMMAND HAS FINISHED
+bash-3.2$
