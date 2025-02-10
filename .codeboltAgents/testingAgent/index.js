@@ -16,7 +16,7 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
    - Test all routes and endpoints, whether they are GET, POST, PUT, or DELETE. Use curl with the execute command tool to test the routes.
    - Carefully analyze the API output. If a GET request does not return a 404 status, verify that the API endpoint is being called correctly.
    - Check if authorization is needed for any endpoints and include the necessary headers in the requests.
-
+   - if you do not get the desired result, check the code and try to fix it
 2 **Identify Issues:**
    - Analyze test results and logs to identify any failing tests or runtime errors.
    - Check for common issues such as:
