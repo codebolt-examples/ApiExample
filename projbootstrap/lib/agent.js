@@ -6,20 +6,21 @@ const codebolt = require('@codebolt/codeboltjs').default;
  * Here we are only working on tools, and nothing else.
  */
 class Agent {
-    constructor(tools = {}, maxRun = 0) {
+    constructor(tools = {}, maxRun = 0,systemprompt) {
         this.tools = tools;
         this.apiConversationHistory = []
         this.maxRun = maxRun;
+        this.systemprompt=systemprompt
     }
 
-    async run(systemprompt, userMessages = [], successCondition = () => true) {
+    async run(userMessages = [], successCondition = () => true) {
         let completed = false;
         this.apiConversationHistory.push({ role: "user", content: userMessages });
         let runcomplete = 0
         while (!completed && (runcomplete <= this.maxRun || this.maxRun == 0)) {
             try {
                 runcomplete++;
-                const response = await this.attemptLlmRequest(this.apiConversationHistory, this.tools, systemprompt);
+                const response = await this.attemptLlmRequest(this.apiConversationHistory, this.tools);
                 let isMessagePresentinReply = false;
                 for (const contentBlock of response.choices) {
                     if (contentBlock.message) {
@@ -102,10 +103,10 @@ class Agent {
         return { success: completed, error: null };
     }
 
-    async attemptLlmRequest(apiConversationHistory, tools, systemPrompt) {
+    async attemptLlmRequest(apiConversationHistory, tools) {
         try {
             const aiMessages = [
-                { role: "system", content: systemPrompt },
+                { role: "system", content: this.systemPrompt },
                 ...apiConversationHistory,
             ]
             const createParams = {
