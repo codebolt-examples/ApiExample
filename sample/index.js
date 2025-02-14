@@ -8,6 +8,13 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     let customInstructions;
     let PROMPT;
 
+    let userMessageObj = new UserMessage(req.message);
+    let systemprompt = new SystemPrompt("./agent.yaml", "proxyagent")
+    let agenttools = await codebolt.MCP.getAllMCPTools('codebolt');
+    let agent = new Agent(systemprompt)
+    let task = new Task(agenttools, "./task.yaml", "research_task")
+    agent.execute(task);
+
     try {
         const agentYamlPath = path.resolve(__dirname, 'agent.yaml');
         const agentYamlContent = fs.readFileSync(agentYamlPath, 'utf8');
