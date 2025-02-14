@@ -1,10 +1,8 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2025.
+    Read user instructions carefully. Setup project if not already set up. If the project is already set up, do nothing and call taskCompletion.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    Confirmation of project setup or a call to taskCompletion if the project is already set up.
   agent: researcher
 
 reporting_task:

@@ -1,38 +1,41 @@
+const codebolt = require('@codebolt/codeboltjs').default;
+
 /**
  * Basic working of Agent is that it will send the task to LLM and then inside while loop, it will keep on calling llm, 
  * untill the llm says that it has done the task.
  * Here we are only working on tools, and nothing else.
  */
 class Agent {
-    constructor(tools = {}, maxRun=0) {
+    constructor(tools = {}, maxRun = 0) {
         this.tools = tools;
         this.apiConversationHistory = []
         this.maxRun = maxRun;
     }
 
-    async run(systemprompt, successCondition = () => true) {
+    async run(systemprompt, userMessages = [], successCondition = () => true) {
         let completed = false;
+        this.apiConversationHistory.push({ role: "user", content: userMessages });
         let runcomplete = 0
-        while(!completed && (runcomplete<=this.maxRun || this.maxRun==0)){
-            runcomplete ++;
-            const response = await this.attemptLlmRequest(this.apiConversationHistory, this.tools, systemprompt);
-            let isMessagePresentinReply = false;
-            for (const contentBlock of response.choices) {
-                if (contentBlock.message) {
-                    isMessagePresentinReply = true;
-                    this.apiConversationHistory.push(contentBlock.message);
-                    if (contentBlock.message.content != null) {
-                        await codebolt.chat.sendMessage(contentBlock.message.content);
+        while (!completed && (runcomplete <= this.maxRun || this.maxRun == 0)) {
+            try {
+                runcomplete++;
+                const response = await this.attemptLlmRequest(this.apiConversationHistory, this.tools, systemprompt);
+                let isMessagePresentinReply = false;
+                for (const contentBlock of response.choices) {
+                    if (contentBlock.message) {
+                        isMessagePresentinReply = true;
+                        this.apiConversationHistory.push(contentBlock.message);
+                        if (contentBlock.message.content != null) {
+                            await codebolt.chat.sendMessage(contentBlock.message.content);
+                        }
                     }
                 }
-            }
-            if (!isMessagePresentinReply) {
-                this.apiConversationHistory.push({
-                    role: "assistant",
-                    content: [{ type: "text", text: "Failure: I did not provide a response." }],
-                });
-            }
-
+                if (!isMessagePresentinReply) {
+                    this.apiConversationHistory.push({
+                        role: "assistant",
+                        content: [{ type: "text", text: "Failure: I did not provide a response." }],
+                    });
+                }
                 try {
                     let toolResults = [];
                     let taskCompletedBlock;
@@ -63,7 +66,7 @@ class Agent {
                             JSON.parse(taskCompletedBlock.function.arguments || "{}")
                         );
                         if (result === "") {
-                            isStructureCreated = true;
+                            completed = true;
                             result = "The user is satisfied with the result.";
                         }
                         toolResults.push(this.getToolResult(taskCompletedBlock.id, result));
@@ -89,35 +92,70 @@ class Agent {
                         }
                     }
                 } catch (error) {
-                    console.log(error);
-                    break;
+                    return { success: false, error: error.message || error };
+
                 }
+            } catch (error) {
+                return { success: false, error: error.message || error };
+            }
+        }
+        return { success: completed, error: null };
+    }
+
+    async attemptLlmRequest(apiConversationHistory, tools, systemPrompt) {
+        try {
+            const aiMessages = [
+                { role: "system", content: systemPrompt },
+                ...apiConversationHistory,
+            ]
+            const createParams = {
+                full: true,
+                messages: aiMessages,
+                tools: tools,
+                tool_choice: "auto",
+            };
+            // console.log(JSON.stringify(aiMessages))
+
+            let { completion } = await codebolt.llm.inference(createParams);
+            return completion
+            // return {message}
+        } catch (error) {
+            console.log(error)
+
+            return this.attemptApiRequest()
         }
     }
 
-    async attemptLlmRequest(apiConversationHistory, tools, prompt) {
-        // Placeholder for the actual implementation
-    }
-
     async sendMessage(content) {
-        // Placeholder for the actual implementation
+        codebolt.chat.sendMessage(content)
     }
 
-    addToConversationHistory(){
+    addToConversationHistory() {
 
     }
 
-    getToolDetail(tool) {
-        // Placeholder for the actual implementation
-    }
+
 
     async executeTool(toolName, toolInput) {
         // Placeholder for the actual implementation
+        return await codebolt.MCP.executeTool(toolName, toolInput);
     }
+    getToolDetail = (tool) => {
+        return {
+            toolName: tool.function.name,
+            toolInput: JSON.parse(tool.function.arguments || "{}"),
+            toolUseId: tool.id
+        };
+    }
+    getToolResult = (tool_call_id, content) => {
+        let toolResult = {
+            role: "tool",
+            tool_call_id,
+            content,
+        }
+        return toolResult
 
-    getToolResult(toolUseId, result) {
-        // Placeholder for the actual implementation
     }
 }
 
-module.exports = {Agent};
+module.exports = { Agent };
