@@ -12,7 +12,7 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     let systemprompt = new SystemPrompt("./agent.yaml", "proxyagent")
     let agenttools = await codebolt.MCP.getAllMCPTools('codebolt');
     let agent = new Agent(systemprompt)
-    let task = new Task(agenttools, "./task.yaml", "research_task")
+    let task = new TaskInstruction(agenttools, "./task.yaml", "research_task")
     agent.execute(task);
 
     try {
