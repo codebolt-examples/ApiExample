@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/Users/ravirawat/Documents/codebolt/urban-rose"
+            ]
+        },
+        "coincap": {
+            "command": "npx",
+            "args": ["coincap-mcp"]
+          }
+    }
+}

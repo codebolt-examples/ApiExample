@@ -1,8 +1,7 @@
-const { UserMessage } = require('./lib/usermessage');
-const { SystemPrompt } = require('./lib/systemprompt');
-const { TaskInstruction } = require('./lib/taskInstruction');
-const { Agent } = require('./lib/agent');
+
 const codebolt = require('@codebolt/codeboltjs').default;
+
+const { UserMessage, SystemPrompt, TaskInstruction, Agent } = require("@codebolt/codeboltjs/utils");
 
 codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
     try {
@@ -13,6 +12,6 @@ codebolt.chat.onActionMessage().on("userMessage", async (req, response) => {
         const agent = new Agent(agentTools, systemPrompt);
         const { success, error } = await agent.run(task);
         response(success ? success : error);
-    } catch (error) { response(error)}
+    } catch (error) { console.log(error)}
+})
 
-});
