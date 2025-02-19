@@ -1,5 +1,5 @@
 {
-  "name": "mainAgent",
+  "name": "main_agent",
   "version": "1.0.0",
   "description": "This is a codebolt agent.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@codebolt/codeboltjs": "1.1.87",
+    "@codebolt/codeboltjs": "1.1.91",
     "@babel/core": "^7.26.0",
     "copy-webpack-plugin": "^12.0.2",
     "path-browserify": "^1.0.1",

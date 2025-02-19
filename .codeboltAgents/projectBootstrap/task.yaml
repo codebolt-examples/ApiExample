@@ -1,0 +1,6 @@
+research_task:
+  description: >
+    Read user instructions carefully. Setup project if not already set up. If the project is already set up, do nothing and call taskCompletion.
+  expected_output: >
+    Setup project if not already set up. If the project is already set up, do nothing and call taskCompletion.
+  agent: researcher

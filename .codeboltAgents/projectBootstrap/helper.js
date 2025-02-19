@@ -39,6 +39,7 @@ const getToolResult = (tool_call_id, content) => {
             full: true,
             messages: aiMessages,
             tools: tools,
+            max_tokens:1024,
             tool_choice: "auto",
         };
         // console.log(JSON.stringify(aiMessages))

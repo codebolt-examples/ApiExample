@@ -5,8 +5,8 @@ description: My Codebolt Agent
 tags:
   - ''
 longDescription: >
-  A basic agent designed for the Codebolt platform, offering a range of
-  functionalities to enhance interaction with the platform.
+  Responsible for setting up a blank project based on user requirements.
+
 avatarSrc: https://placehold.co/200x200
 avatarFallback: CE
 metadata:
@@ -19,7 +19,11 @@ metadata:
     strict: true
     modelorder:
       - ollama2
-  sdlc_steps_managed: []
+  sdlc_steps_managed:
+    - name: codegeneration
+      example_instructions:
+        - setup project
+        - setup blank project
   llm_role:
     - name: documentationllm
       description: >-
@@ -61,7 +65,7 @@ metadata:
 actions:
   - name: Execute
     description: Executes the given task.
-    detailDescription: more detailed description
+    detailDescription: More detailed description
     actionPrompt: Please run this code
 author: codebolt
 version: 1.0.0
