@@ -1,0 +1,16 @@
+research_task:
+  description: >
+    Read user instructions carefully. Setup project if not already set up. If the project is already set up, do nothing and call taskCompletion.
+  expected_output: >
+    Confirmation of project setup or a call to taskCompletion if the project is already set up.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledge reports with the mains topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporting_analyst
+  output_file: report.md

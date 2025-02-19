@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@codebolt/codeboltjs": "/Users/ravirawat/Documents/Arrowai/codeboltjs",
+    "js-yaml": "^4.1.0"
+  }
+}
